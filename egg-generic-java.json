@@ -36,10 +36,10 @@
     "variables": [
         {
             "sort": 1,
-            "name": "JAR FILE",
+            "name": "Jar File",
             "description": "",
             "env_variable": "JARFILE",
-            "default_value": "sneakyhub.jar",
+            "default_value": "application.jar",
             "user_viewable": true,
             "user_editable": true,
             "rules": [

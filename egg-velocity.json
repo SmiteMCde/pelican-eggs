@@ -70,20 +70,6 @@
             "field_type": "text"
         },
         {
-            "sort": 3,
-            "name": "Download Path",
-            "description": "A URL to use to download a server.jar rather than the ones in the install script. This is not user viewable.",
-            "env_variable": "DL_PATH",
-            "default_value": "",
-            "user_viewable": false,
-            "user_editable": false,
-            "rules": [
-                "nullable",
-                "string"
-            ],
-            "field_type": "text"
-        },
-        {
             "sort": 4,
             "name": "Build Number",
             "description": "The build number for the velocity release.\r\n\r\nLeave at latest to always get the latest version. Invalid versions will default to latest.",
@@ -95,6 +81,20 @@
                 "required",
                 "string",
                 "max:20"
+            ],
+            "field_type": "text"
+        },
+        {
+            "sort": 3,
+            "name": "Download Path",
+            "description": "A URL to use to download a server.jar rather than the ones in the install script. This is not user viewable.",
+            "env_variable": "DL_PATH",
+            "default_value": "",
+            "user_viewable": false,
+            "user_editable": false,
+            "rules": [
+                "nullable",
+                "string"
             ],
             "field_type": "text"
         }
