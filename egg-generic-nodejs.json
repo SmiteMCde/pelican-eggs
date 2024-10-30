@@ -17,6 +17,7 @@
         "Nodejs 18": "ghcr.io\/parkervcp\/yolks:nodejs_18",
         "Nodejs 17": "ghcr.io\/parkervcp\/yolks:nodejs_17",
         "Nodejs 16": "ghcr.io\/parkervcp\/yolks:nodejs_16",
+        "Nodejs 15": "ghcr.io\/parkervcp\/yolks:nodejs_15",
         "Nodejs 14": "ghcr.io\/parkervcp\/yolks:nodejs_14",
         "Nodejs 12": "ghcr.io\/parkervcp\/yolks:nodejs_12"
     },
