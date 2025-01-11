@@ -12,6 +12,7 @@
     "features": [],
     "docker_images": {
         "Nodejs 23": "ghcr.io\/parkervcp\/yolks:nodejs_23",
+        "Nodejs 22": "ghcr.io\/parkervcp\/yolks:nodejs_22",
         "Nodejs 21": "ghcr.io\/parkervcp\/yolks:nodejs_21",
         "Nodejs 20": "ghcr.io\/parkervcp\/yolks:nodejs_20",
         "Nodejs 19": "ghcr.io\/parkervcp\/yolks:nodejs_19",
