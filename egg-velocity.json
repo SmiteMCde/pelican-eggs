@@ -1,15 +1,16 @@
 {
     "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PANEL",
     "meta": {
-        "version": "PTDL_v2",
+        "version": "PLCN_v1",
         "update_url": "https:\/\/raw.githubusercontent.com\/SmiteMCde\/pelican-eggs\/refs\/heads\/master\/egg-velocity.json"
     },
-    "exported_at": "2024-10-12T20:32:22+02:00",
+    "exported_at": "2025-01-12T13:37:00+00:00",
     "name": "Velocity",
     "author": "parker@parkervcp.com",
     "uuid": "44d20b6d-0a20-4144-a96c-71d214b3c850",
     "description": "Velocity is a Minecraft server proxy with unparalleled server support, scalability, and flexibility.",
     "features": [
+        "eula",
         "java_version",
         "pid_limit"
     ],
@@ -49,8 +50,7 @@
                 "required",
                 "string",
                 "max:20"
-            ],
-            "field_type": "text"
+            ]
         },
         {
             "sort": 2,
@@ -65,8 +65,20 @@
                 "string",
                 "max:32",
                 "regex:\/^([\\w\\d._-]+)(\\.jar)$\/"
-            ],
-            "field_type": "text"
+            ]
+        },
+        {
+            "sort": 3,
+            "name": "Download Path",
+            "description": "A URL to use to download a server.jar rather than the ones in the install script. This is not user viewable.",
+            "env_variable": "DL_PATH",
+            "default_value": "",
+            "user_viewable": false,
+            "user_editable": false,
+            "rules": [
+                "nullable",
+                "string"
+            ]
         },
         {
             "sort": 4,
@@ -80,22 +92,7 @@
                 "required",
                 "string",
                 "max:20"
-            ],
-            "field_type": "text"
-        },
-        {
-            "sort": 3,
-            "name": "Download Path",
-            "description": "A URL to use to download a server.jar rather than the ones in the install script. This is not user viewable.",
-            "env_variable": "DL_PATH",
-            "default_value": "",
-            "user_viewable": false,
-            "user_editable": false,
-            "rules": [
-                "nullable",
-                "string"
-            ],
-            "field_type": "text"
+            ]
         }
     ]
 }

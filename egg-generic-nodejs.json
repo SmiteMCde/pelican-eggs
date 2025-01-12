@@ -1,10 +1,10 @@
 {
     "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PANEL",
     "meta": {
-        "version": "PTDL_v2",
+        "version": "PLCN_v1",
         "update_url": "https:\/\/raw.githubusercontent.com\/SmiteMCde\/pelican-eggs\/refs\/heads\/master\/egg-generic-nodejs.json"
     },
-    "exported_at": "2024-10-12T20:32:36+02:00",
+    "exported_at": "2025-01-12T13:37:00+00:00",
     "name": "Generic Node.js",
     "author": "parker@parkervcp.com",
     "uuid": "fe73af9d-0d33-42f4-9572-fad52eb802f0",
@@ -50,8 +50,7 @@
             "rules": [
                 "nullable",
                 "string"
-            ],
-            "field_type": "text"
+            ]
         },
         {
             "sort": 2,
@@ -64,8 +63,7 @@
             "rules": [
                 "nullable",
                 "string"
-            ],
-            "field_type": "text"
+            ]
         },
         {
             "sort": 3,
@@ -78,8 +76,7 @@
             "rules": [
                 "required",
                 "boolean"
-            ],
-            "field_type": "text"
+            ]
         },
         {
             "sort": 4,
@@ -92,8 +89,7 @@
             "rules": [
                 "required",
                 "boolean"
-            ],
-            "field_type": "text"
+            ]
         },
         {
             "sort": 5,
@@ -106,8 +102,7 @@
             "rules": [
                 "nullable",
                 "string"
-            ],
-            "field_type": "text"
+            ]
         },
         {
             "sort": 6,
@@ -120,8 +115,7 @@
             "rules": [
                 "nullable",
                 "string"
-            ],
-            "field_type": "text"
+            ]
         },
         {
             "sort": 7,
@@ -134,8 +128,7 @@
             "rules": [
                 "nullable",
                 "string"
-            ],
-            "field_type": "text"
+            ]
         },
         {
             "sort": 8,
@@ -148,8 +141,7 @@
             "rules": [
                 "nullable",
                 "string"
-            ],
-            "field_type": "text"
+            ]
         },
         {
             "sort": 9,
@@ -163,8 +155,7 @@
                 "required",
                 "string",
                 "max:16"
-            ],
-            "field_type": "text"
+            ]
         },
         {
             "sort": 10,
@@ -178,8 +169,7 @@
                 "nullable",
                 "string",
                 "max:64"
-            ],
-            "field_type": "text"
+            ]
         }
     ]
 }

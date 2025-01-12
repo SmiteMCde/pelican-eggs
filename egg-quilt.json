@@ -1,10 +1,10 @@
 {
     "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PANEL",
     "meta": {
-        "version": "PTDL_v2",
+        "version": "PLCN_v1",
         "update_url": "https:\/\/raw.githubusercontent.com\/SmiteMCde\/pelican-eggs\/refs\/heads\/master\/egg-quilt.json"
     },
-    "exported_at": "2024-06-01T19:39:59+00:00",
+    "exported_at": "2025-01-12T13:37:00+00:00",
     "name": "Quilt",
     "author": "diedyesterdaywashere@gmail.com",
     "uuid": "dff33655-6e6a-4430-accf-e5aea04c2912",
@@ -25,7 +25,7 @@
     "file_denylist": [],
     "startup": "java -Xms128M -XX:MaxRAMPercentage=95.0 -Dterminal.jline=false -Dterminal.ansi=true -jar {{SERVER_JARFILE}} nogui",
     "config": {
-        "files": "{\r\n    \"server.properties\": {\r\n        \"parser\": \"properties\",\r\n        \"find\": {\r\n            \"server-ip\": \"0.0.0.0\",\r\n            \"enable-query\": \"true\",\r\n            \"server-port\": \"{{server.build.default.port}}\"\r\n        }\r\n    }\r\n}",
+        "files": "{\r\n    \"server.properties\": {\r\n        \"parser\": \"properties\",\r\n        \"find\": {\r\n            \"server-ip\": \"0.0.0.0\",\r\n            \"enable-query\": \"true\",\r\n            \"server-port\": \"{{server.allocations.default.port}}\"\r\n        }\r\n    }\r\n}",
         "startup": "{\r\n    \"done\": \")! For help, type \",\r\n    \"userInteraction\": [\r\n        \"Go to eula.txt for more info.\"\r\n    ]\r\n}",
         "logs": "{\r\n    \"custom\": false,\r\n    \"location\": \"logs\/latest.log\"\r\n}",
         "stop": "stop"
@@ -50,8 +50,7 @@
                 "required",
                 "string",
                 "between:3,15"
-            ],
-            "field_type": "text"
+            ]
         },
         {
             "sort": 2,
@@ -64,8 +63,7 @@
             "rules": [
                 "required",
                 "regex:\/^([\\w\\d._-]+)(\\.jar)$\/"
-            ],
-            "field_type": "text"
+            ]
         }
     ]
 }

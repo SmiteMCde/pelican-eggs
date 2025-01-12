@@ -1,10 +1,10 @@
 {
     "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PANEL",
     "meta": {
-        "version": "PTDL_v2",
+        "version": "PLCN_v1",
         "update_url": "https:\/\/raw.githubusercontent.com\/SmiteMCde\/pelican-eggs\/refs\/heads\/master\/egg-teamspeak3-server.json"
     },
-    "exported_at": "2024-10-12T20:34:15+02:00",
+    "exported_at": "2025-01-12T13:37:00+00:00",
     "name": "Teamspeak3 Server",
     "author": "parker@parkervcp.com",
     "uuid": "983b1fac-d322-4d5f-a636-436127326b37",
@@ -41,23 +41,7 @@
                 "required",
                 "string",
                 "max:6"
-            ],
-            "field_type": "text"
-        },
-        {
-            "sort": 4,
-            "name": "Query Protocols",
-            "description": "Comma separated list of protocols that can be used to connect to the ServerQuery | \r\nPossible values are raw, ssh and http | \r\nE.g.: raw,ssh,http",
-            "env_variable": "QUERY_PROTOCOLS_VAR",
-            "default_value": "raw,http,ssh",
-            "user_viewable": true,
-            "user_editable": true,
-            "rules": [
-                "required",
-                "string",
-                "max:12"
-            ],
-            "field_type": "text"
+            ]
         },
         {
             "sort": 2,
@@ -71,8 +55,7 @@
                 "required",
                 "integer",
                 "between:1025,65535"
-            ],
-            "field_type": "text"
+            ]
         },
         {
             "sort": 3,
@@ -86,8 +69,21 @@
                 "required",
                 "integer",
                 "between:1025,65535"
-            ],
-            "field_type": "text"
+            ]
+        },
+        {
+            "sort": 4,
+            "name": "Query Protocols",
+            "description": "Comma separated list of protocols that can be used to connect to the ServerQuery | \r\nPossible values are raw, ssh and http | \r\nE.g.: raw,ssh,http",
+            "env_variable": "QUERY_PROTOCOLS_VAR",
+            "default_value": "raw,http,ssh",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": [
+                "required",
+                "string",
+                "max:12"
+            ]
         },
         {
             "sort": 5,
@@ -101,8 +97,7 @@
                 "required",
                 "integer",
                 "between:1025,65535"
-            ],
-            "field_type": "text"
+            ]
         },
         {
             "sort": 6,
@@ -116,8 +111,7 @@
                 "required",
                 "integer",
                 "between:1025,65535"
-            ],
-            "field_type": "text"
+            ]
         }
     ]
 }

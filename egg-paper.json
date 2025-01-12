@@ -1,10 +1,10 @@
 {
     "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PANEL",
     "meta": {
-        "version": "PTDL_v2",
+        "version": "PLCN_v1",
         "update_url": "https:\/\/raw.githubusercontent.com\/SmiteMCde\/pelican-eggs\/refs\/heads\/master\/egg-paper.json"
     },
-    "exported_at": "2024-10-12T20:32:04+02:00",
+    "exported_at": "2025-01-12T13:37:00+00:00",
     "name": "Paper",
     "author": "parker@parkervcp.com",
     "uuid": "5da37ef6-58da-4169-90a6-e683e1721247",
@@ -50,8 +50,7 @@
                 "nullable",
                 "string",
                 "max:20"
-            ],
-            "field_type": "text"
+            ]
         },
         {
             "sort": 2,
@@ -64,8 +63,20 @@
             "rules": [
                 "required",
                 "regex:\/^([\\w\\d._-]+)(\\.jar)$\/"
-            ],
-            "field_type": "text"
+            ]
+        },
+        {
+            "sort": 3,
+            "name": "Download Path",
+            "description": "A URL to use to download a server.jar rather than the ones in the install script. This is not user viewable.",
+            "env_variable": "DL_PATH",
+            "default_value": "",
+            "user_viewable": false,
+            "user_editable": false,
+            "rules": [
+                "nullable",
+                "string"
+            ]
         },
         {
             "sort": 4,
@@ -79,22 +90,7 @@
                 "required",
                 "string",
                 "max:20"
-            ],
-            "field_type": "text"
-        },
-        {
-            "sort": 3,
-            "name": "Download Path",
-            "description": "A URL to use to download a server.jar rather than the ones in the install script. This is not user viewable.",
-            "env_variable": "DL_PATH",
-            "default_value": "",
-            "user_viewable": false,
-            "user_editable": false,
-            "rules": [
-                "nullable",
-                "string"
-            ],
-            "field_type": "text"
+            ]
         }
     ]
 }

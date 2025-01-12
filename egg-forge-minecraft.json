@@ -1,10 +1,10 @@
 {
     "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PANEL",
     "meta": {
-        "version": "PTDL_v2",
+        "version": "PLCN_v1",
         "update_url": "https:\/\/raw.githubusercontent.com\/SmiteMCde\/pelican-eggs\/refs\/heads\/master\/egg-forge-minecraft.json"
     },
-    "exported_at": "2024-10-12T20:34:35+02:00",
+    "exported_at": "2025-01-12T13:37:00+00:00",
     "name": "Forge Minecraft",
     "author": "parker@parkervcp.com",
     "uuid": "ed072427-f209-4603-875c-f540c6dd5a65",
@@ -39,6 +39,19 @@
     },
     "variables": [
         {
+            "sort": 1,
+            "name": "Server Jar File",
+            "description": "The name of the Jarfile to use when running Forge version below 1.17.",
+            "env_variable": "SERVER_JARFILE",
+            "default_value": "server.jar",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": [
+                "required",
+                "regex:\/^([\\w\\d._-]+)(\\.jar)$\/"
+            ]
+        },
+        {
             "sort": 2,
             "name": "Minecraft Version",
             "description": "The version of minecraft you want to install for.\r\n\r\nLeaving latest will install the latest recommended version.",
@@ -50,22 +63,7 @@
                 "required",
                 "string",
                 "max:9"
-            ],
-            "field_type": "text"
-        },
-        {
-            "sort": 1,
-            "name": "Server Jar File",
-            "description": "The name of the Jarfile to use when running Forge version below 1.17.",
-            "env_variable": "SERVER_JARFILE",
-            "default_value": "server.jar",
-            "user_viewable": true,
-            "user_editable": true,
-            "rules": [
-                "required",
-                "regex:\/^([\\w\\d._-]+)(\\.jar)$\/"
-            ],
-            "field_type": "text"
+            ]
         },
         {
             "sort": 3,
@@ -79,8 +77,7 @@
                 "required",
                 "string",
                 "in:recommended,latest"
-            ],
-            "field_type": "text"
+            ]
         },
         {
             "sort": 4,
@@ -93,8 +90,7 @@
             "rules": [
                 "nullable",
                 "regex:\/^[0-9\\.\\-]+$\/"
-            ],
-            "field_type": "text"
+            ]
         }
     ]
 }
