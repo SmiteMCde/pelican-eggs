@@ -11,6 +11,7 @@
     "description": "Creates a container that runs java.",
     "features": [],
     "docker_images": {
+        "Java 22": "ghcr.io\/parkervcp\/yolks:java_22",
         "Java 21": "ghcr.io\/parkervcp\/yolks:java_21",
         "Java 19": "ghcr.io\/parkervcp\/yolks:java_19",
         "Java 17": "ghcr.io\/parkervcp\/yolks:java_17",
