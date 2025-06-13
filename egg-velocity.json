@@ -10,7 +10,6 @@
     "uuid": "44d20b6d-0a20-4144-a96c-71d214b3c850",
     "description": "Velocity is a Minecraft server proxy with unparalleled server support, scalability, and flexibility.",
     "features": [
-        "eula",
         "java_version",
         "pid_limit"
     ],
