@@ -23,7 +23,7 @@
     "startup": "java  -Xmx{{SERVER_MEMORY}}M -Dterminal.jline=false -Dterminal.ansi=true -jar {{JARFILE}}",
     "config": {
         "files": "{}",
-        "startup": "{\n    \"done\": [\n        \"Service started in\",\n        \"Logged in as\",\n        \"Done!\"\n    ]\n}",
+        "startup": "{\n    \"done\": [\n        \"Service started in\",\n        \"Logged in as\",\n        \"started in\",\n        \"Done!\"\n    ]\n}",
         "logs": "{}",
         "stop": "^C"
     },
