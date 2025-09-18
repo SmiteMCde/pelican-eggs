@@ -20,7 +20,7 @@
         "Java 8": "ghcr.io\/parkervcp\/yolks:java_8"
     },
     "file_denylist": [],
-    "startup": "java -Xmx{{SERVER_MEMORY}}M -Dterminal.jline=false -Dterminal.ansi=true -jar {{JARFILE}}",
+    "startup": "java -Xms128M -Xmx{{SERVER_MEMORY}}M -Dterminal.jline=false -Dterminal.ansi=true -jar {{JARFILE}}",
     "config": {
         "files": "{}",
         "startup": "{\n    \"done\": [\n        \"Service started in\",\n        \"Logged in as\",\n        \"started in\",\n        \"Done!\"\n    ]\n}",
