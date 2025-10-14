@@ -1,27 +1,30 @@
 {
     "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PANEL",
     "meta": {
-        "version": "PLCN_v1",
-        "update_url": "https:\/\/raw.githubusercontent.com\/SmiteMCde\/pelican-eggs\/refs\/heads\/master\/egg-generic-java.json"
+        "version": "PLCN_v3",
+        "update_url": "https://raw.githubusercontent.com/SmiteMCde/pelican-eggs/refs/heads/master/egg-generic-java.json"
     },
-    "exported_at": "2025-01-12T13:37:00+00:00",
+    "exported_at": "2025-10-14T00:00:00+00:00",
     "name": "Generic Java",
     "author": "parker@parkervcp.com",
     "uuid": "a3ff6992-6e87-42b8-b8ca-cde33f38a435",
     "description": "Creates a container that runs java.",
+    "tags": [],
     "features": [],
     "docker_images": {
-        "Java 25": "ghcr.io\/parkervcp\/yolks:java_25",
-        "Java 22": "ghcr.io\/parkervcp\/yolks:java_22",
-        "Java 21": "ghcr.io\/parkervcp\/yolks:java_21",
-        "Java 19": "ghcr.io\/parkervcp\/yolks:java_19",
-        "Java 17": "ghcr.io\/parkervcp\/yolks:java_17",
-        "Java 16": "ghcr.io\/parkervcp\/yolks:java_16",
-        "Java 11": "ghcr.io\/parkervcp\/yolks:java_11",
-        "Java 8": "ghcr.io\/parkervcp\/yolks:java_8"
+        "Java 25": "ghcr.io/parkervcp/yolks:java_25",
+        "Java 22": "ghcr.io/parkervcp/yolks:java_22",
+        "Java 21": "ghcr.io/parkervcp/yolks:java_21",
+        "Java 19": "ghcr.io/parkervcp/yolks:java_19",
+        "Java 17": "ghcr.io/parkervcp/yolks:java_17",
+        "Java 16": "ghcr.io/parkervcp/yolks:java_16",
+        "Java 11": "ghcr.io/parkervcp/yolks:java_11",
+        "Java 8": "ghcr.io/parkervcp/yolks:java_8"
     },
     "file_denylist": [],
-    "startup": "java -Xms128M -Xmx{{SERVER_MEMORY}}M -Dterminal.jline=false -Dterminal.ansi=true -jar {{JARFILE}}",
+    "startup_commands": {
+        "Default": "java -Xms128M -Xmx{{SERVER_MEMORY}}M -Dterminal.jline=false -Dterminal.ansi=true -jar {{JARFILE}}"
+    },
     "config": {
         "files": "{}",
         "startup": "{\n    \"done\": [\n        \"Service started in\",\n        \"Logged in as\",\n        \"started in\",\n        \"Done!\"\n    ]\n}",
@@ -30,8 +33,8 @@
     },
     "scripts": {
         "installation": {
-            "script": "#!\/bin\/bash\r\n# Java Installation Script\r\n#\r\n# Server Files: \/mnt\/server\r\nPROJECT=java\r\n\r\napt update\r\napt install -y curl jq\r\n\r\ncd \/mnt\/server",
-            "container": "ghcr.io\/parkervcp\/yolks:debian",
+            "script": "#!/bin/bash\r\n# Java Installation Script\r\n#\r\n# Server Files: /mnt/server\r\nPROJECT=java\r\n\r\napt update\r\napt install -y curl jq\r\n\r\ncd /mnt/server",
+            "container": "ghcr.io/parkervcp/yolks:debian",
             "entrypoint": "bash"
         }
     },
