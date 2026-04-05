@@ -25,7 +25,7 @@ docker_images:
   'Java 8': 'ghcr.io/parkervcp/yolks:java_8'
 file_denylist: {  }
 startup_commands:
-  Default: 'java -Xms128M -Xmx{{SERVER_MEMORY}}M -XX:MaxRAMPercentage=95.0 -jar {{SERVER_JARFILE}}'
+  Default: 'java -Xms128M -Xmx{{SERVER_MEMORY}}M -XX:MaxRAMPercentage=95.0 -Dterminal.jline=false -Dterminal.ansi=true -jar {{SERVER_JARFILE}}'
 config:
   files:
     server.properties:
