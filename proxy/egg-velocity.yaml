@@ -1,8 +1,8 @@
 _comment: 'DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PANEL'
 meta:
   version: PLCN_v3
-  update_url: 'https://raw.githubusercontent.com/SmiteMCde/pelican-eggs/refs/heads/master/egg-velocity.yaml'
-exported_at: '2025-12-13T00:00:00+00:00'
+  update_url: 'https://raw.githubusercontent.com/SmiteMCde/pelican-eggs/refs/heads/master/proxy/egg-velocity.yaml'
+exported_at: '2026-04-05T00:00:00+00:00'
 name: Velocity
 author: parker@parkervcp.com
 uuid: 44d20b6d-0a20-4144-a96c-71d214b3c850
@@ -137,8 +137,7 @@ variables:
   -
     sort: 3
     name: 'Download Path'
-    description: |-
-      A URL to use to download the jarfile rather than the ones in the install script.
+    description: 'A URL to use to download the jarfile rather than the ones in the install script.'
     env_variable: DL_PATH
     default_value: ''
     user_viewable: false
@@ -163,7 +162,7 @@ variables:
     name: 'Packet Decode Logging'
     description: 'Whether packet decode logging is enabled.'
     env_variable: PACKET_DECODE_LOGGING
-    default_value: false
+    default_value: 0
     user_viewable: true
     user_editable: true
     rules:
