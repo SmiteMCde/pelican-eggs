@@ -106,7 +106,7 @@ variables:
   -
     sort: 1
     name: 'Minecraft Version'
-    description: "The version of minecraft to download. \r\n\r\nLeave at latest to always get the latest version. Invalid versions will default to latest."
+    description: "The Minecraft version to download. \r\n\r\nLeave at latest to always get the latest version. Invalid versions will default to latest."
     env_variable: MINECRAFT_VERSION
     default_value: latest
     user_viewable: true
@@ -118,7 +118,7 @@ variables:
   -
     sort: 2
     name: 'Server Jar File'
-    description: 'The name of the server jarfile to run the server with.'
+    description: 'The name of the server jar file to run the server with.'
     env_variable: SERVER_JARFILE
     default_value: server.jar
     user_viewable: true
@@ -131,7 +131,7 @@ variables:
   -
     sort: 3
     name: 'Download Path'
-    description: 'A URL to use to download the jarfile rather than the ones in the install script.'
+    description: 'A URL to use to download the jar file instead of the one in the install script.'
     env_variable: DL_PATH
     default_value: ''
     user_viewable: false
@@ -142,7 +142,7 @@ variables:
   -
     sort: 4
     name: 'Build Number'
-    description: "The build number for the paper release.\r\n\r\nLeave at latest to always get the latest version. Invalid versions will default to latest."
+    description: "The build number for the Paper release.\r\n\r\nLeave at latest to always get the latest version. Invalid versions will default to latest."
     env_variable: BUILD_NUMBER
     default_value: latest
     user_viewable: true
